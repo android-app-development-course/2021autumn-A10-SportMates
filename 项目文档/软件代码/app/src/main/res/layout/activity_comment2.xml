@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:text="发状态"
+            android:gravity="center|left"
+            android:textColor="@color/white"
+            android:background="@color/green1"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="top"></TextView>
+
+        <Button
+            android:id="@+id/send"
+            android:layout_marginTop="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:background="@drawable/btnstyle1"
+            android:text="发表"
+            android:textSize="25dp"
+            android:textColor="@color/white"></Button>
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:hint="分享新鲜事..."
+        android:paddingTop="10dp"
+        android:gravity="left|top"></EditText>
+
+
+
+
+</LinearLayout>

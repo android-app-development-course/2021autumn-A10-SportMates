@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".del_member">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="编辑队员"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/listView_member"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="4dp"
+        android:paddingTop="4dp">
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center">-->
+
+<!--            <Button-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/button"-->
+<!--                android:id="@+id/reset"-->
+<!--                android:text="删除"-->
+<!--                android:textColor="@color/black"-->
+<!--                app:backgroundTint="@null"/>-->
+
+<!--        </LinearLayout>-->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:id="@+id/back"
+                android:text="返回"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+tools:context=".leader_view">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="队伍详情"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="队 名："
+                    android:id="@+id/output_name"
+                    android:gravity="top"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="类 型："
+                    android:id="@+id/output_type"
+                    android:gravity="top"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="人 数："
+                    android:id="@+id/output_mem"
+                    android:gravity="top"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="时 间："
+                    android:id="@+id/output_time"
+                    android:gravity="top"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="地 点："
+                    android:id="@+id/output_place"
+                    android:gravity="top"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="10dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="描 述："
+                    android:gravity="top"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:gravity="top"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="10dp"
+                    android:id="@+id/output_description"
+                    android:hint="暂无队伍描述"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="0dp"
+                android:orientation="horizontal"
+                android:layout_gravity="top"
+                android:gravity="top"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="成 员："
+                    android:gravity="top"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"/>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="编辑"
+                        android:id="@+id/update_member"
+                        android:layout_gravity="right"
+                        android:textSize="13sp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/rc"/>
+
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:src="@drawable/p1"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:src="@drawable/p2"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:src="@drawable/p3"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:src="@drawable/p4"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:src="@drawable/p5"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:src="@drawable/p6"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_width="25dp"-->
+<!--                        android:layout_height="25dp"-->
+<!--                        android:src="@drawable/p7"/>-->
+
+<!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:id="@+id/reset"
+                android:text="编辑队伍"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:id="@+id/remove"
+                android:text="解散队伍"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+

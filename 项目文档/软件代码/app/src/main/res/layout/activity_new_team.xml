@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".new_team">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/green1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="新建队伍"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="20dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="队 名："
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/edit_name"
+                    android:hint="请输入队伍名称"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="类 型："
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/edit_type"
+                    android:hint="请输入运动类型"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="人 数："
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/edit_num"
+                    android:hint="请输入队伍人数"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="时 间："
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/edit_time"
+                    android:hint="请输入运动时间"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="地 点："
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:paddingLeft="10dp"
+                    android:gravity="center|left"
+                    android:paddingRight="10dp"
+                    android:id="@+id/edit_place1"
+                    android:hint="点击此处选择区域"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center"
+                    android:textSize="16sp"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="50dp"
+                    android:textSize="16sp"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/edit_place2"
+                    android:hint="请输入详细地点"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="描 述："
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingBottom="4dp"
+                android:paddingTop="0dp">
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textSize="16sp"
+                    android:gravity="top"
+                    android:background="@drawable/edittext"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:id="@+id/edit_description"
+                    android:hint="请输入队伍描述"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:paddingBottom="20dp"
+        android:paddingTop="4dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1"
+            tools:ignore="NestedWeights">
+
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/okk"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="确定"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <Button
+                android:layout_width="80dp"
+                android:id="@+id/no_okk"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button"
+                android:text="返回"
+                android:textColor="@color/black"
+                app:backgroundTint="@null"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

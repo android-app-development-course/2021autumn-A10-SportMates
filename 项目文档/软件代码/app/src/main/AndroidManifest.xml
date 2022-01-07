@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+    <!-- 允许联网 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取GSM（2g）、WCDMA（联通3g）等网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 获取wifi网络状态的信息 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 保持CPU 运转，屏幕和键盘灯有可能是关闭的,用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 获取sd卡写的权限，用于文件上传和下载 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 允许读取手机状态 用于创建BmobInstallation -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 读写sd卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 写sd卡 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" /> <!-- 获取精确gps位置 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> <!-- 获取粗略位置 -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- 允许程序访问额外的定位提供者指令获取模拟定位信息 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 网络链接 -->
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 更改wifi连状态 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 获取wifi状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission
+        android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/appstart1"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/appstart1"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApplication"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".about"
+            android:exported="true" />
+        <activity
+            android:name=".myorders"
+            android:exported="true" />
+        <activity
+            android:name=".create_order"
+            android:exported="true" />
+        <activity
+            android:name=".del_member"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".map"
+            android:exported="true"
+            android:launchMode="singleTask">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="IzbU3Sd1iRNOZ9hc06UjncFoNxdd9jDT" />
+
+        <activity
+            android:name=".update_team"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".leader_view"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".mycomments"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".writeLittleComment"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".modify_Mydata"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".register"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".login"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".goods_detail"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".mycart"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".shop"
+            android:exported="true"
+            android:launchMode="singleTask">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".com_detail"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".new_team"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".team_details"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".my_team"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".home"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".mine"
+            android:exported="true"
+            android:launchMode="singleTask">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".comment3"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".Comment2"
+            android:exported="true"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="com.example.myapplication.BmobContentProvider" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+    </application>
+
+</manifest>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="25dp"
+            android:text="论坛"
+            android:paddingLeft="15dp"
+            android:gravity="left|center"
+            android:textColor="@color/white"
+            android:background="@color/green1"
+            android:layout_weight="1"
+            android:layout_gravity="top"></TextView>
+
+        <LinearLayout
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:background="@color/green1">
+            <ImageButton
+                android:paddingTop="10dp"
+                android:id="@+id/img_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/write"
+                android:background="@color/green1"
+                ></ImageButton>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/refresh">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <ListView
+                android:id="@+id/listViewC"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <include layout="@layout/bar"
+            ></include>
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
